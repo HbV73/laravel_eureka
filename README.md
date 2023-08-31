@@ -1,14 +1,15 @@
 # laravel_eureka
 Eureka Clients Code
 
-#How to use
-##install
+# How to use
+## install
 composer require "piwvh/php-eureka"
 
-##make provider
+## make provider
 php artisan make:provider EurekaProvider
 
-##copy below code
+## copy below code
+```bash
     /**
      * Register services.
      */
@@ -27,3 +28,4 @@ php artisan make:provider EurekaProvider
         ]);
         $client->register();
     }
+```
